@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+            xmlns="http://www.BikeOnTrack.com/Empresa" 
+            targetNamespace="http://www.BikeOnTrack.com/Empresa" 
+            xmlns:datas="http://www.BikeOnTrack.com/Datas" 
+            xmlns:clientes="http://www.BikeOnTrack.com/Clientes" 
+            xmlns:produtos="http://www.BikeOnTrack.com/Produtos" 
+            elementFormDefault="qualified">
+    <xs:import schemaLocation="datas.xsd" namespace="http://www.BikeOnTrack.com/Datas" />
+    <xs:element name="empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nomeEmpresa" type="nome"/>
+                <xs:element name="NIFEmpresa"/>
+                <xs:element name="MoradaEmpresa"/>
+                <xs:element name="ContactosEmpresa"/>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+    <xs:simpleType name="nome">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

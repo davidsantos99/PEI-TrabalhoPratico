@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+            xmlns="http://www.BikeOnTrack.com/Datas" 
+            targetNamespace="http://www.BikeOnTrack.com/Datas" 
+            xmlns:taxas="http://www.BikeOnTrack.com/Taxas"
+            elementFormDefault="qualified">
+    <xs:import schemaLocation="taxas.xsd" namespace="http://www.BikeOnTrack.com/Taxas" />
+</xs:schema>
