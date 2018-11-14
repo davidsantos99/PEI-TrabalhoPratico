@@ -5,4 +5,20 @@
             xmlns:taxas="http://www.BikeOnTrack.com/Taxas"
             elementFormDefault="qualified">
     <xs:import schemaLocation="taxas.xsd" namespace="http://www.BikeOnTrack.com/Taxas" />
+
+    <xs:element name="datas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="" type=""/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="dataInicio">
+
+    </xs:simpleType>
+
+    <xs:simpleType name="dataFim">
+        
+    </xs:simpleType>
 </xs:schema>
