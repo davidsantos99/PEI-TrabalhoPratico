@@ -20,6 +20,7 @@
                 <RateVal></RateVal>
             </taxas>
         </moeda>
+        <dataGeracao></dataGeracao>
         <vendas>
             <ReceiptID></ReceiptID>
             <OrderDate></OrderDate>

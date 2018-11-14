@@ -9,7 +9,7 @@
     <xs:import schemaLocation="datas.xsd" namespace="http://www.BikeOnTrack.com/Datas" />
     <xs:element name="empresa">
         <xs:complexType>
-            <xs:sequence>
+            <xs:sequence minOccurs="1" maxOccurs="unbounded">
                 <xs:element name="nomeEmpresa" type="nomeEmpresa"/>
                 <xs:element name="NIF_Empresa" type="NIF_Empresa"/>
                 <xs:element name="MoradaEmpresa" type="MoradaEmpresa"/>
@@ -21,7 +21,7 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-
+                <xs:element name="datas" type="datas:Date"></xs:element>
             </xs:sequence>
         </xs:complexType>
 

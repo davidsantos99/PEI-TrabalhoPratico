@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+            xmlns="http://www.BikeOnTrack.com/Taxas" 
+            targetNamespace="http://www.BikeOnTrack.com/Taxas" 
+            elementFormDefault="qualified">
+    <xs:complexType name="ImpostoTaxas">
+        <xs:sequence>
+            <xs:element name="CurrencyRateID" type="CurrencyRateID"/>
+            <xs:element name="CurrencyRateDate" type="CurrencyRateDate"/>
+            <xs:element name="FromCurrencyCode" type="FromCurrencyCode"/>
+            <xs:element name="ToCurrencyCode" type="ToCurrencyCode" />
+            <xs:element name="RateVal" type="RateVal" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="CurrencyRateID">
+    </xs:simpleType>
+
+    <xs:simpleType name="CurrencyRateDate">
+    </xs:simpleType>
+
+    <xs:simpleType name="FromCurrencyCode">
+    </xs:simpleType>
+    
+    <xs:simpleType name="ToCurrencyCode">
+    </xs:simpleType>
+
+    <xs:simpleType name="RateVal">
+    </xs:simpleType>
+</xs:schema>
