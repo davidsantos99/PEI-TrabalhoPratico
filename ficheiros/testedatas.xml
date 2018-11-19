@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<d:Date xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:d="http://www.BikeOnTrack.com/Datas"
+	xsi:schemaLocation="http://www.BikeOnTrack.com/Datas datas.xsd"
+	xmlns="http://www.BikeOnTrack.com/Taxas">
+
+	<d:dataInicio>2002-05-30T09:00:00</d:dataInicio>
+	<d:dataFim>2002-05-30T09:00:00</d:dataFim>
+	<d:taxas>
+			<CurrencyRateID>122</CurrencyRateID>
+			<CurrencyRateDate>2002-05-30T09:00:00</CurrencyRateDate>
+			<FromCurrencyCode>USD</FromCurrencyCode>
+			<ToCurrencyCode>AUD</ToCurrencyCode>
+			<RateVal>1</RateVal>
+	</d:taxas>
+	<d:dataGeracao>2002-05-30T09:00:00</d:dataGeracao>
+</d:Date>

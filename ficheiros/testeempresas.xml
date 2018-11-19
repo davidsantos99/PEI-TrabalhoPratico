@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e:empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:e="http://www.BikeOnTrack.com/Empresa"
+	xsi:schemaLocation="http://www.BikeOnTrack.com/Empresa empresa.xsd"
+	xmlns:d="http://www.BikeOnTrack.com/Datas"
+	xmlns:t="http://www.BikeOnTrack.com/Taxas">
+
+	<e:nomeEmpresa>Boda e Companhia</e:nomeEmpresa>
+	<e:NIF_Empresa>123456789</e:NIF_Empresa>
+	<e:MoradaEmpresa>Rua Santa</e:MoradaEmpresa>
+	<e:ContactosEmpresa>
+		<e:Numero>123456789</e:Numero>
+		<e:Email>boda@gmail.com</e:Email>
+	</e:ContactosEmpresa>
+	<e:datas>
+			<d:dataInicio>2002-05-30T09:00:00</d:dataInicio>
+			<d:dataFim>2002-05-30T09:00:00</d:dataFim>
+			<d:taxas>
+					<t:CurrencyRateID>122</t:CurrencyRateID>
+					<t:CurrencyRateDate>2002-05-30T09:00:00</t:CurrencyRateDate>
+					<t:FromCurrencyCode>USD</t:FromCurrencyCode>
+					<t:ToCurrencyCode>AUD</t:ToCurrencyCode>
+					<t:RateVal>1</t:RateVal>
+			</d:taxas>
+			<d:dataGeracao>2002-05-30T09:00:00</d:dataGeracao>			
+	</e:datas>
+</e:empresa>
+
