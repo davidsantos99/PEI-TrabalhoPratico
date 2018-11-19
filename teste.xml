@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa>
+    <nomeEmpresa></nomeEmpresa>
+    <NIF_Empresa></NIF_Empresa>
+    <MoradaEmpresa></MoradaEmpresa>
+    <ContactosEmpresa>
+        <Numero></Numero>
+        <Email></Email>
+    </ContactosEmpresa>
+    <datas>
+        <dataInicio></dataInicio>
+        <dataFim></dataFim>
+        <moeda>
+            <taxas>
+                <CurrencyRateID></CurrencyRateID>
+                <CurrencyRateDate></CurrencyRateDate>
+                <FromCurrencyCode></FromCurrencyCode>
+                <ToCurrencyCode></ToCurrencyCode>
+                <RateVal></RateVal>
+            </taxas>
+        </moeda>
+        <dataGeracao></dataGeracao>
+        <vendas>
+            <ReceiptID></ReceiptID>
+            <OrderDate></OrderDate>
+            <Customer></Customer>
+            <CurrencyRateID></CurrencyRateID>
+            <SubTotal></SubTotal>
+            <TaxAmt></TaxAmt>
+            <Store></Store>
+            <StoreName></StoreName>
+            <ReceiptLineID></ReceiptLineID>
+            <Order></Order>
+            <ProductID>
+                <ProductName></ProductName>    
+                <ProductNumber></ProductNumber>
+                <Color></Color>
+                <ListPrice></ListPrice>
+                <SellStartDate></SellStartDate>
+                <SellEndDate></SellEndDate>
+            </ProductID>
+            <UnitPrice></UnitPrice>
+            <LineTotal></LineTotal>
+        </vendas>
+        <dataGeracao></dataGeracao>
+    </datas>
+</empresa>
