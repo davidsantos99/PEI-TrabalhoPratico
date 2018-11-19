@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prod:Produtos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:prod="http://www.BikeOnTrack.com/Produtos"
+	xsi:schemaLocation="http://www.BikeOnTrack.com/Produtos produtos.xsd"
+	xmlns="http://www.BikeOnTrack.com/Produtos">
+
+    <prod:ProductID>709</prod:ProductID>
+    <prod:ProductName>Mountain Bike Socks, M</prod:ProductName>
+    <prod:ProductNumber>SO-B909-M</prod:ProductNumber>
+    <prod:Color>White</prod:Color>
+    <prod:ListPrice>9.5</prod:ListPrice>
+    <prod:SellStartDate>2011-05-31T00:00:00</prod:SellStartDate>
+    <prod:SellEndDate>2012-05-29T00:00:00</prod:SellEndDate>
+
+</prod:Produtos>
