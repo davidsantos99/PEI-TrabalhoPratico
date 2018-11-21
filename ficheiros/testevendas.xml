@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vendas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.BikeOnTrack.com/Vendas"
+	xsi:schemaLocation="http://www.BikeOnTrack.com/Vendas vendas.xsd"
+	xmlns:prod="http://www.BikeOnTrack.com/Produtos">
+
+	<ReceiptID>1111</ReceiptID>
+	<OrderDate>2002-09-24</OrderDate>
+	<Customer>22222</Customer>
+	<CurrencyRateID></CurrencyRateID>
+	<SubTotal>1294</SubTotal>
+	<TaxAmt>6206	</TaxAmt>
+	<Store>1971</Store>
+	<StoreName>5149</StoreName>
+	<ReceiptLineID>1046</ReceiptLineID>
+	<Order>Boda e companhia</Order>
+	<ProductID>
+			    <prod:ProductID>709</prod:ProductID>
+			    <prod:ProductName>Mountain Bike Socks, M</prod:ProductName>
+			    <prod:ProductNumber>SO-B909-M</prod:ProductNumber>
+			    <prod:Color>White</prod:Color>
+			    <prod:ListPrice>9.5</prod:ListPrice>
+			    <prod:SellStartDate>2011-05-31T00:00:00</prod:SellStartDate>
+			    <prod:SellEndDate>2012-05-29T00:00:00</prod:SellEndDate>
+	</ProductID>
+	<UnitPrice>1</UnitPrice>
+	<LineTotal>766</LineTotal>
+</Vendas>
