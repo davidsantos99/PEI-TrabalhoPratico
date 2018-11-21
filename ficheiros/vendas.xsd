@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
             xmlns="http://www.BikeOnTrack.com/Vendas" 
@@ -7,63 +8,104 @@
 
 		<xs:complexType name="Vendas">
 		<xs:sequence>
-		    <xs:element name="ReceiptID" type="CurrencyRateID"/>
-		    <xs:element name="OrderDate" type="CurrencyRateDate"/>
-		    <xs:element name="Customer" type="FromCurrencyCode"/>
-		    <xs:element name="CurrencyRateID" type="ToCurrencyCode" />
-		    <xs:element name="SubTotal" type="RateVal" />
-            <xs:element name="TaxAmt" type="ToCurrencyCode" />
-		    <xs:element name="Store" type="RateVal" />
-            <xs:element name="StoreName" type="ToCurrencyCode" />
-		    <xs:element name="ReceiptLineID" type="RateVal" />
-            <xs:element name="Order" type="RateVal" />
+		    <xs:element name="ReceiptID" type="TypeReceiptID"/>
+		    <xs:element name="OrderDate" type="TypeOrderDate"/>
+		    <xs:element name="Customer" type="TypeCustomer"/>
+		    <xs:element name="CurrencyRateID" type="TypeCurrencyRateID" nillable="true" />
+		    <xs:element name="SubTotal" type="TypeSubTotal" />
+            <xs:element name="TaxAmt" type="TypeTaxAmt" />
+		    <xs:element name="Store" type="TypeStore" />
+            <xs:element name="StoreName" type="TypeStoreName" />
+		    <xs:element name="ReceiptLineID" type="TypeReceiptLineID" />
+            <xs:element name="Order" type="TypeOrder" />
             <xs:element name="ProductID" type="prod:Produtos" />
-		    <xs:element name="UnitPrice" type="RateVal" />
-            <xs:element name="LineTotal" type="RateVal" />
+		    <xs:element name="UnitPrice" type="TypeUnitPrice" />
+            <xs:element name="LineTotal" type="TypeLineTotal" />
 		</xs:sequence>
 	    </xs:complexType>
         
-    <xs:simpleType name="CurrencyRateID">
-    	<xs:restriction base="xs:integer">
-    		<xs:minInclusive value="0" />
-    		<xs:maxInclusive value="999999999"/>
-    	</xs:restriction>
+
+    <xs:simpleType name="TypeReceiptID">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="99999"/>
+        </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="CurrencyRateDate">
+    <xs:simpleType name="TypeOrderDate">
         <xs:restriction base="xs:dateTime">
             <xs:pattern value="[2].*:[0-9]{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="FromCurrencyCode">
-    	<xs:restriction base="xs:string">
-    		<xs:enumeration value="USD"/>
-    	</xs:restriction>
-    </xs:simpleType>
-    
-    <xs:simpleType name="ToCurrencyCode">
-    	<xs:restriction base="xs:string">
-    		<xs:enumeration value="AUD"/>
-    		<xs:enumeration value="ARS"/>
-    		<xs:enumeration value="BRL"/>
-    		<xs:enumeration value="CAD"/>
-    		<xs:enumeration value="CNY"/>
-    		<xs:enumeration value="DEM"/>
-    		<xs:enumeration value="EUR"/>
-    		<xs:enumeration value="FRF"/>
-    		<xs:enumeration value="GBP"/>
-    		<xs:enumeration value="JPY"/>
-    		<xs:enumeration value="MXN"/>
-    		<xs:enumeration value="SAR"/>
-    		<xs:enumeration value="VEB"/>
-    	</xs:restriction>
+    <xs:simpleType name = "TypeCustomer">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="99999"/>
+        </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="RateVal">
-    	<xs:restriction base="xs:integer">
-    		<xs:minInclusive value="0"/>
-    		<xs:maxInclusive value="999999999"/>
-    	</xs:restriction>
+    <xs:simpleType name = "TypeCurrencyRateID" >
+        <xs:restriction base = "xs:integer">
+            <xs:minInclusive value = "0" />
+            <xs:maxInclusive value = "99999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name = "TypeSubTotal">
+        <xs:restriction base = "xs:integer">
+            <xs:minInclusive value = "0" />
+            <xs:maxInclusive value = "99999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name = "TypeTaxAmt" >
+        <xs:restriction base = "xs:integer" >
+            <xs:minInclusive value = "0" />
+            <xs:maxInclusive value = "9999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name = "TypeStore" >
+        <xs:restriction base = "xs:integer" >
+            <xs:minInclusive value = "0" />
+            <xs:maxInclusive value = "9999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name = "TypeStoreName" >
+        <xs:restriction base = "xs:integer" >
+            <xs:minInclusive value = "0" />
+            <xs:maxInclusive value = "9999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name = "TypeReceiptLineID">
+        <xs:restriction base = "xs:integer" >
+            <xs:minInclusive value = "0" />
+            <xs:maxInclusive value = "9999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name = "TypeOrder" >
+        <xs:restriction base = "xs:string">
+
+        </xs:restriction>
+     </xs:simpleType>
+
+    <xs:simpleType name = "TypeUnitPrice" >
+        <xs:restriction base = "xs:integer">
+            <xs:minInclusive value = "1" />
+            <xs:maxInclusive value = "9999" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name = "TypeLineTotal" >
+        <xs:restriction base = "xs:integer" >
+            <xs:minInclusive value =  "0" />
+            <xs:maxInclusive value = "999" />
+        </xs:restriction>
     </xs:simpleType>
 </xs:schema>
