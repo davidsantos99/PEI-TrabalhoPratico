@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <e:empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:e="http://www.BikeOnTrack.com/Empresa"
-    xsi:schemaLocation="http://www.BikeOnTrack.com/Empresa emresa.xsd"
+    xsi:schemaLocation="http://www.BikeOnTrack.com/Empresa empresa.xsd"
     xmlns:v="http://www.BikeOnTrack.com/Vendas"
     xmlns:d="http://www.BikeOnTrack.com/Datas"
     xmlns:t="http://www.BikeOnTrack.com/Taxas"
     xmlns:prod="http://www.BikeOnTrack.com/Produtos"
     >
-            <e:nomeEmpresa>Boda e Companhia</e:nomeEmpresa>
+            <e:nomeEmpresa>Better Bike Shop</e:nomeEmpresa>
             <e:NIF_Empresa>123456789</e:NIF_Empresa>
-            <e:MoradaEmpresa>Rua Santa</e:MoradaEmpresa>
+            <e:MoradaEmpresa>Rua Nova</e:MoradaEmpresa>
             <e:ContactosEmpresa>
                 <e:Numero>123456789</e:Numero>
-                <e:Email>boda@gmail.com</e:Email>
+                <e:Email>bbshop@gmail.com</e:Email>
             </e:ContactosEmpresa>
             <e:datas>
                     <d:dataInicio>2002-05-30T09:00:00</d:dataInicio>
@@ -27,18 +27,18 @@
                     <d:dataGeracao>2002-05-30T09:00:00</d:dataGeracao>          
             </e:datas>
             <e:vendas>
-                <v:ReceiptID>1111</v:ReceiptID>
-                <v:OrderDate>2002-09-24</v:OrderDate>
-                <v:Customer>22222</v:Customer>
+                <v:ReceiptID>43659</v:ReceiptID>
+                <v:OrderDate>20011-05-31</v:OrderDate>
+                <v:Customer>29825</v:Customer>
                 <v:CurrencyRateID></v:CurrencyRateID>
-                <v:SubTotal>1294</v:SubTotal>
-                <v:TaxAmt>6206 </v:TaxAmt>
+                <v:SubTotal>20565</v:SubTotal>
+                <v:TaxAmt>6206</v:TaxAmt>
                 <v:Store>1971</v:Store>
                 <v:StoreName>5149</v:StoreName>
                 <v:ReceiptLineID>1046</v:ReceiptLineID>
-                <v:Order>Boda e companhia</v:Order>
+                <v:Order>Better Bike Shop</v:Order>
                 <v:ProductID>
-                            <prod:ProductID>709</prod:ProductID>
+                            <prod:ProductID>776</prod:ProductID>
                             <prod:ProductName>Mountain Bike Socks, M</prod:ProductName>
                             <prod:ProductNumber>SO-B909-M</prod:ProductNumber>
                             <prod:Color>White</prod:Color>
