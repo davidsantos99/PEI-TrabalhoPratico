@@ -3,19 +3,19 @@
             xmlns="http://www.BikeOnTrack.com/Produtos" 
             targetNamespace="http://www.BikeOnTrack.com/Produtos"
             elementFormDefault="qualified">
-<xs:element  name="Produtos">
-		<xs:complexType>
-		<xs:sequence>
-            <xs:element name="ProductID" type="TypeProductID"/>		    
-            <xs:element name="ProductName" type="TypeProductName"/>
-		    <xs:element name="ProductNumber" type="TypeProductNumber"/>
-		    <xs:element name="Color" type="TypeColor"/>
-		    <xs:element name="ListPrice" type="TypeListPrice" />
-		    <xs:element name="SellStartDate" type="TypeSellStartDate" />
-            <xs:element name="SellEndDate" type="TypeSellEndDate" />
-		</xs:sequence>
-	    </xs:complexType>
-</xs:element>
+
+
+	<xs:complexType name="Produtos">
+    		<xs:sequence>
+                <xs:element name="ProductID" type="TypeProductID"/>		    
+                <xs:element name="ProductName" type="TypeProductName"/>
+    		    <xs:element name="ProductNumber" type="TypeProductNumber"/>
+    		    <xs:element name="Color" type="TypeColor"/>
+    		    <xs:element name="ListPrice" type="TypeListPrice" />
+    		    <xs:element name="SellStartDate" type="TypeSellStartDate" />
+                <xs:element name="SellEndDate" type="TypeSellEndDate" />
+    		</xs:sequence>
+	</xs:complexType>
     <xs:simpleType name="TypeProductID">
     	<xs:restriction base="xs:integer">
     		<xs:minInclusive value="0" />
