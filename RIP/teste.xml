@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<g:gestao empresa = "BikeOnTrack" 
+    xmlns:g="http://www.BikeOnTrack.com/Gestao"
+    xsi:schemaLocation="http://www.BikeOnTrack.com/Gestao gestao.xsd"
+    xmlns:v="http://www.BikeOnTrack.com/Vendas"
+    xmlns:c="http://www.BikeOnTrack.com/Clientes"
+    xmlns:d="http://www.BikeOnTrack.com/Datas"
+    xmlns:t="http://www.BikeOnTrack.com/Taxas"
+    xmlns:prod="http://www.BikeOnTrack.com/Produtos" >
+      
+    <g:Nome>Bike On Track</g:Nome>
+    <g:NIF>123456789</g:NIF>
+    <g:Morada>Rua das Flores e das Camélias</g:Morada>
+    <g:Contactos>
+        <g:Email>912222222</g:Email>
+        <g:Telefone>estamosfudidos@gmail.com</g:Telefone>
+    </g:Contactos>
+    <d:datas>
+        <d:dataInicio>2011-05-31 00:00:00.000</d:dataInicio>
+        <d:dataFim>2012-05-29 00:00:00.000</d:dataFim>
+        <d:dataGeracao></d:dataGeracao>
+        <venda>  
+            <ReceiptID></ReceiptID>
+            <OrderDate></OrderDate>
+            <cliente>
+                <ID></ID>
+                <nome></nome>
+                <NIF></NIF>
+                <Morada></Morada>
+                <Contactos>
+                    <Email></Email>
+                    <Telefone></Telefone>
+                </Contactos>
+            </cliente>
+            <taxas>
+                <CurrencyRateID></CurrencyRateID>
+                <CurrencyRateDate></CurrencyRateDate>
+                <FromCurrencyCode></FromCurrencyCode>
+                <ToCurrencyCode></ToCurrencyCode>
+                <RateVal></RateVal>
+            </taxas>
+            <subtotal></subtotal>
+            <TaxAmt></TaxAmt>
+            <stock>
+                <ReceiptLineID></ReceiptLineID>
+                <Order></Order>
+                <produto>
+                    <ProductID></ProductID>
+                    <Name></Name>
+                    <ProductNumber></ProductNumber>
+                    <Color></Color>
+                    <ListPrice></ListPrice>
+                    <SellStartDate></SellStartDate>
+                    <SellEndDate></SellEndDate>
+                </produto>
+                <UnitPrize></UnitPrize>
+            </stock>
+            <LineTotal></LineTotal>
+        </venda>
+    </d:datas>
+</gestao>
