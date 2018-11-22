@@ -12,7 +12,7 @@
             <xs:element name="ReceiptLineID" type="TypeReceiptLineID" />
             <xs:element name="Order" type="TypeOrder" />
             <xs:element name="produto" type="p:produtos"/>
-            <xs:element name="UnitPrize" type="TypeUnitPrize" />
+            <xs:element name="UnitPrice" type="TypeUnitPrice" />
         </xs:sequence>
     </xs:complexType>
 
@@ -32,7 +32,7 @@
     </xs:simpleType>
 
 
-    <xs:simpleType name="TypeUnitPrize">
+    <xs:simpleType name="TypeUnitPrice">
         <xs:restriction base="xs:decimal">
             <xs:totalDigits value="10"/>
             <xs:fractionDigits value="4"/>

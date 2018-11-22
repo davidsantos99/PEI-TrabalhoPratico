@@ -3,10 +3,11 @@
            xmlns="http://www.BikeOnTrack.com/Gestao"
            targetNamespace="http://www.BikeOnTrack.com/Gestao"
            xmlns:d="http://www.BikeOnTrack.com/Datas"
-           elementFormDefault="unqualified">
+           elementFormDefault="qualified">
     <xs:import schemaLocation="datas.xsd" namespace="http://www.BikeOnTrack.com/Datas" />
 
         <xs:element name="gestao">
+            
             <xs:complexType>
                 <xs:sequence minOccurs="1" maxOccurs="unbounded">
                     <xs:element name="Nome" type="TypeNome"/>
@@ -22,7 +23,7 @@
                     </xs:element>
                     <xs:element name="datas" type="d:datas"></xs:element>
                 </xs:sequence>
-                <xs:attribute name="empresa" type="xs:string" use="required" fixed="BikeOnTrack"/>
+		<xs:attribute name="empresa" type="xs:string" use="required" fixed="BikeOnTrack"/>
             </xs:complexType>
         </xs:element>
 

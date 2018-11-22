@@ -20,7 +20,6 @@
         		    <xs:element name="SubTotal" type="TypeSubTotal" />
                     <xs:element name="TaxAmt" type="TypeTaxAmt" />
                     <xs:element name="stock" type="s:stock"/>
-        		    <xs:element name="UnitPrice" type="TypeUnitPrice" />
                     <xs:element name="LineTotal" type="TypeLineTotal" />
         		</xs:sequence>
     	    </xs:complexType>
@@ -42,14 +41,7 @@
     <xs:simpleType name = "TypeTaxAmt" >
         <xs:restriction base = "xs:integer" >
             <xs:minInclusive value = "0" />
-            <xs:maxInclusive value = "9999" />
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name = "TypeUnitPrice" >
-        <xs:restriction base = "xs:integer">
-            <xs:minInclusive value = "1" />
-            <xs:maxInclusive value = "9999" />
+            <xs:maxInclusive value = "99999" />
         </xs:restriction>
     </xs:simpleType>
 

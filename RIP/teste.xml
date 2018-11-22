@@ -14,37 +14,37 @@
     <g:NIF>123456789</g:NIF>
     <g:Morada>Rua das Flores e das Camélias</g:Morada>
     <g:Contactos>
-        <g:Email>912222222</g:Email>
-        <g:Telefone>estamosfudidos@gmail.com</g:Telefone>
+        <g:Email>estamosfudidos@gmail.com</g:Email>
+        <g:Telefone>911222222</g:Telefone>
     </g:Contactos>
-    <d:datas>
-        <d:dataInicio>2011-05-31T00:00:00.000</d:dataInicio>
-        <d:dataFim>2012-05-29T00:00:00.000</d:dataFim>
+    <g:datas>
+        <d:dataInicio>2011-05-31T00:00:00</d:dataInicio>
+        <d:dataFim>2012-05-29T00:00:00</d:dataFim>
         <d:venda>  
             <v:ReceiptID>43659</v:ReceiptID>
             <v:OrderDate>2011-05-31</v:OrderDate>
             <v:cliente>
-                <ID>29825</ID>
-                <Nome>Ze</Nome>
-                <NIF>123123123</NIF>
-                <Morada>Rua Nova</Morada>
-                <Contactos>
-                    <Email>ze@gmail.com</Email>
-                    <Telefone>911222333</Telefone>
-                </Contactos>
+                <c:ID>29825</c:ID>
+                <c:Nome>Ze</c:Nome>
+                <c:NIF>123123123</c:NIF>
+                <c:Morada>Rua Nova</c:Morada>
+                <c:Contactos>
+                    <c:Email>ze@gmail.com</c:Email>
+                    <c:Numero>911222333</c:Numero>
+                </c:Contactos>
             </v:cliente>
             <v:taxas>
-                <CurrencyRateID>122</CurrencyRateID>
-                <CurrencyRateDate>2002-05-30T09:00:00</CurrencyRateDate>
-                <FromCurrencyCode>USD</FromCurrencyCode>
-                <ToCurrencyCode>AUD</ToCurrencyCode>
-                <RateVal>1</RateVal>
+                <t:CurrencyRateID>122</t:CurrencyRateID>
+                <t:CurrencyRateDate>2002-05-30T09:00:00</t:CurrencyRateDate>
+                <t:FromCurrencyCode>USD</t:FromCurrencyCode>
+                <t:ToCurrencyCode>AUD</t:ToCurrencyCode>
+                <t:RateVal>1</t:RateVal>
             </v:taxas>
-            <v:subtotal>20565</v:subtotal>
+            <v:SubTotal>20565</v:SubTotal>
             <v:TaxAmt>6206</v:TaxAmt>
             <v:stock>
-                <s:ReceiptLineID></s:ReceiptLineID>
-                <s:Order></s:Order>
+                <s:ReceiptLineID>1</s:ReceiptLineID>
+                <s:Order>1</s:Order>
                 <s:produto>
                     <p:ProductID>776</p:ProductID>
                     <p:ProductName>Mountain Bike Socks, M</p:ProductName>
@@ -54,10 +54,10 @@
                     <p:SellStartDate>2011-05-31T00:00:00</p:SellStartDate>
                     <p:SellEndDate>2012-05-29T00:00:00</p:SellEndDate>
                 </s:produto>
-                <v:UnitPrize>1</v:UnitPrize>
+                <s:UnitPrice>1.213</s:UnitPrice>
             </v:stock>
-            <v:LineTotal>1</v:LineTotal>
+            <v:LineTotal>111</v:LineTotal>
         </d:venda>        
         <d:dataGeracao>2012-05-29T00:00:00</d:dataGeracao>
-    </d:datas>
+    </g:datas>
 </g:gestao>
