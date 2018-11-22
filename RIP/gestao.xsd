@@ -4,6 +4,8 @@
            targetNamespace="http://www.BikeOnTrack.com/Gestao"
            xmlns:d="http://www.BikeOnTrack.com/Datas"
            elementFormDefault="unqualified">
+    <xs:import schemaLocation="datas.xsd" namespace="http://www.BikeOnTrack.com/Datas" />
+
         <xs:element name="gestao">
             <xs:complexType>
                 <xs:sequence minOccurs="1" maxOccurs="unbounded">
@@ -20,20 +22,21 @@
                     </xs:element>
                     <xs:element name="datas" type="d:datas"></xs:element>
                 </xs:sequence>
+                <xs:attribute name="empresa" type="xs:string" use="required" fixed="BikeOnTrack"/>
             </xs:complexType>
         </xs:element>
 
 
     <xs:simpleType name="TypeNome">
         <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
             <xs:maxLength value="50" />
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="TypeNIF">
         <xs:restriction base="xs:positiveInteger">
-            <xs:minLength value="9" />
-            <xs:maxLength value="9" />
+            <xs:pattern value="\d{9}"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -51,8 +54,7 @@
 
     <xs:simpleType name="TypeTelefone">
         <xs:restriction base="xs:positiveInteger">
-            <xs:minLength value="9" />
-            <xs:maxLength value="9" />
+            <xs:pattern value="\d{9}"/>
         </xs:restriction>
     </xs:simpleType>
 

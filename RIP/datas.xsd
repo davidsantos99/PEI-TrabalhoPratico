@@ -4,13 +4,13 @@
             targetNamespace="http://www.BikeOnTrack.com/Datas" 
             xmlns:v="http://www.BikeOnTrack.com/Vendas"
             elementFormDefault="qualified">
-   <xs:import schemaLocation="vendas.xsd" namespace="http://www.BikeOnTrack.com/Vendas" />
+   <xs:import schemaLocation="venda.xsd" namespace="http://www.BikeOnTrack.com/Vendas" />
 
    <xs:complexType name="datas">
         <xs:sequence>
             <xs:element name="dataInicio" type="TypedataInicio"/>
             <xs:element name="dataFim" type="TypedataFim"/>
-            <xs:element name="taxas" type="v:Vendas"/>
+            <xs:element name="venda" type="v:venda"/>
             <xs:element name="dataGeracao" type="TypedataGeracao" />
         </xs:sequence>
     </xs:complexType>
