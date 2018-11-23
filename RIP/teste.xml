@@ -35,7 +35,7 @@
             </v:cliente>
             <v:taxas>
                 <t:CurrencyRateID>122</t:CurrencyRateID>
-                <t:CurrencyRateDate>2002-05-30T09:00:00</t:CurrencyRateDate>
+                <t:CurrencyRateDate>2011-05-31T09:00:00</t:CurrencyRateDate>
                 <t:FromCurrencyCode>USD</t:FromCurrencyCode>
                 <t:ToCurrencyCode>AUD</t:ToCurrencyCode>
                 <t:RateVal>1</t:RateVal>
@@ -51,8 +51,8 @@
                     <p:ProductNumber>SO-B909-M</p:ProductNumber>
                     <p:Color>White</p:Color>
                     <p:ListPrice>9.5</p:ListPrice>
-                    <p:SellStartDate>2011-05-31T00:00:00</p:SellStartDate>
-                    <p:SellEndDate>2012-05-29T00:00:00</p:SellEndDate>
+                    <p:SellStartDate>2011-05-29T00:00:00</p:SellStartDate>
+                    <p:SellEndDate>2012-05-31T00:00:00</p:SellEndDate>
                 </s:produto>
                 <s:UnitPrice>1.213</s:UnitPrice>
             </v:stock>
