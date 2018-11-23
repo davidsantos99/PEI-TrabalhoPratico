@@ -12,9 +12,9 @@
       
     <g:Nome>BikeOnTrack</g:Nome>
     <g:NIF>123456789</g:NIF>
-    <g:Morada>Rua das Flores e das Camélias</g:Morada>
+    <g:Morada>Rua 25 de Abril</g:Morada>
     <g:Contactos>
-        <g:Email>estamosfudidos@gmail.com</g:Email>
+        <g:Email>BOTstore@gmail.com</g:Email>
         <g:Telefone>911222222</g:Telefone>
     </g:Contactos>
     <g:datas>
@@ -25,11 +25,11 @@
             <v:OrderDate>2011-05-31</v:OrderDate>
             <v:cliente>
                 <c:ID>29825</c:ID>
-                <c:Nome>Ze</c:Nome>
+                <c:Nome>Jose</c:Nome>
                 <c:NIF>123123123</c:NIF>
                 <c:Morada>Rua Nova</c:Morada>
                 <c:Contactos>
-                    <c:Email>ze@gmail.com</c:Email>
+                    <c:Email>Jose@gmail.com</c:Email>
                     <c:Numero>911222333</c:Numero>
                 </c:Contactos>
             </v:cliente>
