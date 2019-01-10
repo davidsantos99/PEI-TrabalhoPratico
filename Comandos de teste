@@ -1,0 +1,30 @@
+var cursor = db.SalesDetails.find( { OrderDate: { $exists: true}});
+while (cursor.hasNext()) { 
+   var doc = cursor.next(); 
+   doc.OrderDate= new ISODate(doc.OrderDate);
+db.SalesDetails.save(doc) ;
+}
+
+
+db.sales.aggregate([{$project:{year: { $year: "$OrderDate" },month: { $month: "$OrderDate" }}}])
+
+
+
+
+
+[{$match:{Store:"+storeID+"},{$project:{"+year+": { $year: "$OrderDate" },{$project:{"+month+": { $month: "$OrderDate" }},{$group:{_id:'$ReceiptID',avgPrice:{$avg:'$LineTotal'}}},{$sort : {_id:1}}]
+
+
+
+
+
+db.sales.aggregate([{"$project":{year:{$year:"$OrderDate"}}},{$match:{year:2014}}])
+
+db.sales.aggregate([{"$project":{year:{$year:"$OrderDate"}}},{$match:$and:[{year:2014},{Store:1046}]}])
+
+db.sales.aggregate([{"$project":{year:{$year:"$OrderDate"},Store:1}},{$match:{$and:[{Store:1046},{year:2011}]}}])
+
+db.sales.aggregate([{"$project":{year:{$year:"$OrderDate"},Store:1,month:{$month:"$OrderDate"},_id:0}},{$match:{$and:[{Store:1046},{year:2011},{month:5}]}}])
+
+db.sales.aggregate([{"$project":{year:{$year:"$OrderDate"},Store:1,month:{$month:"$OrderDate"},ReceiptID:1,LineTotal:1}},{$match:{$and:[{Store:1046},{year:2011},{month:5}]}},{$group:{_id:'$ReceiptID',avgPrice:{$avg:'$LineTotal'}}}])
+
